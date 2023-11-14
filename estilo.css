@@ -37,23 +37,34 @@ align-items: center;
 }
 
 #menu a{
-    display: table-cell;
     text-decoration: none;
     font-size: 22px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 15px;
     color: black;
-    text-align: left;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
 
 #menu a:hover{
     background-color: lightblue;
     color: white;
     border-radius: 0.7em;
+    background-image:linear-gradient(to right, black, gray);
+    color:white;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #main{
+display:flex;
+text-align:center;
+justify-content:center;
+align-items:center;
 background-color: lightcoral;
 grid-area:main;
 border-radius: 0.8em;
@@ -65,22 +76,78 @@ grid-area: sidebar;
 border-radius: 0.8em;
 }
 
+
+
+
 #conteudo1{
-background-color: lightseagreen;
+display:flex;
+text-align:center;
+justify-content:center;
+align-items:center;
+background-color: black;
+color:white;
 grid-area: conteudo1;
 border-radius: 0.8em;
+cursor:pointer;
+transition:transform 0.3s easy-out;
 }
+
+#conteudo1:hover{
+    color: white;
+    border-radius: 0.7em;
+    background-image:linear-gradient(to left, black, gray);
+    color:white;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
 
 #conteudo2{
-background-color: lightsalmon;
+display:flex;
+text-align:center;
+justify-content:center;
+align-items:center;
+background-color:black;
+color:white;
 grid-area: conteudo2;
 border-radius: 0.8em;
+cursor:pointer;
+transition:transform 0.3s easy-out;
 }
 
+#conteudo2:hover{
+    color: white;
+    border-radius: 0.7em;
+    background-image:linear-gradient(to left, black, gray);
+    color:white;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 #conteudo3{
-background-color: lightskyblue;
+display:flex;
+text-align:center;
+justify-content:center;
+align-items:center;
+background-color:black;
+color:white;
 grid-area: conteudo3;
 border-radius: 0.8em;
+cursor:pointer;
+transition:transform 0.3s easy-out;
+}
+
+#conteudo3:hover{
+    color:white;
+    border-radius:0.7em;
+    background-image:linear-gradient(to left,black,gray);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    transform:translateY(-5px);
 }
 
 #footer{
@@ -88,33 +155,3 @@ background-color: lightslategray;
 grid-area: footer;
 border-radius: 8em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
